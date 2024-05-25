@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Password Generator</title>
     <!-- bootstrap link of style -->
     <link rel="shortcut icon" href="./asset/_662a66e0-499c-4ce9-9e52-8f733db0ce48.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -15,12 +15,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CUSTOM CSS LINK -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="text-center bg-dark ">
+<body>
 
-    
+    <div class="container-1">
+        <h1>Generate a <br><span>Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img class="img-1" src="./Asset/images/copy.png" alt="">
+        </div>
+        <button id="button-main" onclick="generatePassword();"><img src="./Asset/images/generate.png" alt="">Generate
+            Password</button>
+    </div>
+
 
 
     <!-- Bootstrap JavaScript LINK -->
