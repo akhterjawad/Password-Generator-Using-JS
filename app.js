@@ -2,7 +2,7 @@ let passwordBox = document.querySelector('#password');
 let img = document.querySelector('.img-1');
 // let button = document.querySelector('#button-main');
 
-let length = 12;
+let length = 9;
 
 let uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let lowercase = 'abcdefghijklmnopqrstuvwxyz';
@@ -24,8 +24,9 @@ function generatePassword() {
     passwordBox.value = password;
     // console.log('work');
 }
-img.addEventListener('Click', function () {
+// img.addEventListener('Click',copyPassword)
+
+function copyPassword() {
     passwordBox.select();
     document.execCommand('copy');
-})
-
+}
