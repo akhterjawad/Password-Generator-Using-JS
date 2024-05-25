@@ -31,23 +31,27 @@ body {
     border-radius: 5px;
 }
 
+.container-1 h1 span {
+    color: #ffee00;
+    /* border-bottom: 4px solid #fbff00; */
+    /* padding-bottom: 7px; */
+}
 .container-1 h1 {
     font-weight: 500;
     font-size: 45px;
 
 }
 
-.container-1 h1 span {
-    color: #ffee00;
-    /* border-bottom: 4px solid #fbff00; */
-    /* padding-bottom: 7px; */
-}
-
+    
 .display img {
     width: 30px;
     cursor: pointer;
 }
 
+.container-1 button img {
+    width: 28px;
+    margin-right: 10px;
+}
 .display input {
     border: 0;
     outline: 0;
@@ -56,10 +60,6 @@ body {
 
 }
 
-.container-1 button img {
-    width: 28px;
-    margin-right: 10px;
-}
 
 .container-1 button {
     border: 0;
