@@ -1,91 +1,88 @@
-* {
+/* General Body Styling */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
 }
 
-body {
-    background: rgb(0, 68, 255);
-    color: #000000;
+.container-fluid {
+    background-color: #212529;
 }
 
-.container-1 {
-    margin: 8%;
-    width: 90%;
-    /* max-width: 700px; */
+.password-generator {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+h1 span {
+    color: #0d6efd;
+}
+
+/* Display Input Styling */
 .display {
-    max-width: 55% !important;
-    /* min-width: 50% !important; */
-    min-width: 275px !important;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 20px;
+    position: relative;
+    text-align: center;
+}
+
+input#password {
+    padding: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid #0d6efd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input#password:focus {
+    border-color: #198754;
+}
+
+/* Buttons */
+button {
+    font-size: 1.2rem;
+    padding: 12px;
+    border: none;
     border-radius: 5px;
 }
 
-.container-1 h1 span {
-    color: #ffee00;
-    /* border-bottom: 4px solid #fbff00; */
-    /* padding-bottom: 7px; */
-}
-.container-1 h1 {
-    font-weight: 500;
-    font-size: 45px;
-
+button.btn-primary {
+    background-color: #0d6efd;
 }
 
-    
-.display img {
-    width: 30px;
-    cursor: pointer;
+button.btn-success {
+    background-color: #198754;
 }
 
-.container-1 button img {
-    width: 28px;
-    margin-right: 10px;
-}
-.display input {
-    border: 0;
-    outline: 0;
-    font-size: 24px;
-    width: 50% !important;
-
+button:hover {
+    opacity: 0.9;
 }
 
-
-.container-1 button {
-    border: 0;
-    outline: 0;
-    background: #ffee00;
-    color: #817d7d;
-    font-size: 22px;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 26px;
-    border-radius: 5px;
-    cursor: pointer;
+button:focus {
+    outline: none;
 }
 
-@media screen and (max-width: 560px) {
-    body {
-        text-align: center !important;
+/* Responsive */
+@media (max-width: 576px) {
+    .password-generator {
+        padding: 20px;
     }
 
-    .display {
-        margin: 30px auto;
+    h1 {
+        font-size: 2rem;
     }
 
     button {
-        margin: 0 auto;
+        font-size: 1rem;
     }
 }
